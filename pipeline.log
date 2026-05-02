@@ -1,0 +1,318 @@
+2026-05-01 17:44:13,658 | INFO     | 🚀 PIPELINE STARTED
+2026-05-01 17:44:13,659 | INFO     | Product: 1, Store: 1
+2026-05-01 17:44:13,660 | INFO     | Start time: 2026-05-01 17:44:13.658491
+2026-05-01 17:44:13,662 | INFO     | ============================================================
+2026-05-01 17:44:13,666 | INFO     | STEP 1: Verifying database connection
+2026-05-01 17:44:13,669 | INFO     | ============================================================
+2026-05-01 17:44:14,059 | INFO     | ✅ Database connection verified
+2026-05-01 17:44:14,061 | INFO     | 
+============================================================
+2026-05-01 17:44:14,062 | INFO     | STEP 2: Checking data availability
+2026-05-01 17:44:14,065 | INFO     | ============================================================
+2026-05-01 17:44:14,762 | INFO     | Database already has 3,000,888 sales transactions. Skipping load.
+2026-05-01 17:44:14,762 | INFO     | ✅ Data available
+2026-05-01 17:44:14,765 | INFO     | 
+============================================================
+2026-05-01 17:44:14,767 | INFO     | STEP 3: Training and evaluating models
+2026-05-01 17:44:14,768 | INFO     | ============================================================
+2026-05-01 17:44:17,332 | INFO     | Loaded 1684 days of data
+2026-05-01 17:44:17,334 | INFO     | 
+Training ARIMA...
+2026-05-01 17:46:03,935 | INFO     | ✅ ARIMA completed successfully
+2026-05-01 17:46:03,939 | INFO     | 
+Training Prophet...
+2026-05-01 17:46:04,748 | INFO     | Chain [1] start processing
+2026-05-01 17:46:04,941 | INFO     | Chain [1] done processing
+2026-05-01 17:46:05,252 | INFO     | Chain [1] start processing
+2026-05-01 17:46:05,303 | INFO     | Chain [1] done processing
+2026-05-01 17:46:05,474 | INFO     | Chain [1] start processing
+2026-05-01 17:46:05,586 | INFO     | Chain [1] done processing
+2026-05-01 17:46:05,824 | INFO     | Chain [1] start processing
+2026-05-01 17:46:05,913 | INFO     | Chain [1] done processing
+2026-05-01 17:46:06,127 | INFO     | Chain [1] start processing
+2026-05-01 17:46:06,190 | INFO     | Chain [1] done processing
+2026-05-01 17:46:06,370 | INFO     | Chain [1] start processing
+2026-05-01 17:46:06,490 | INFO     | Chain [1] done processing
+2026-05-01 17:46:06,702 | INFO     | Chain [1] start processing
+2026-05-01 17:46:06,810 | INFO     | Chain [1] done processing
+2026-05-01 17:46:07,012 | INFO     | Chain [1] start processing
+2026-05-01 17:46:07,162 | INFO     | Chain [1] done processing
+2026-05-01 17:46:07,404 | INFO     | Chain [1] start processing
+2026-05-01 17:46:07,598 | INFO     | Chain [1] done processing
+2026-05-01 17:46:07,887 | INFO     | Chain [1] start processing
+2026-05-01 17:46:08,004 | INFO     | Chain [1] done processing
+2026-05-01 17:46:08,353 | INFO     | Chain [1] start processing
+2026-05-01 17:46:08,497 | INFO     | Chain [1] done processing
+2026-05-01 17:46:08,629 | INFO     | ✅ Prophet completed successfully
+2026-05-01 17:46:08,630 | INFO     | 
+Training XGBoost...
+2026-05-01 17:46:22,470 | INFO     | ✅ XGBoost completed successfully
+2026-05-01 17:46:23,137 | INFO     | 
+🏆 Winner: XGBoost (MAPE: 23.15%)
+2026-05-01 17:46:23,220 | INFO     | ✅ Feature importance saved
+2026-05-01 17:46:23,223 | INFO     | 
+============================================================
+2026-05-01 17:46:23,224 | INFO     | STEP 4: Generating inventory recommendations
+2026-05-01 17:46:23,225 | INFO     | ============================================================
+2026-05-01 17:46:27,546 | INFO     | ✅ Inventory recommendations saved
+2026-05-01 17:46:27,547 | INFO     | 
+============================================================
+2026-05-01 17:46:27,548 | INFO     | STEP 5: Generating future forecasts
+2026-05-01 17:46:27,549 | INFO     | ============================================================
+2026-05-01 17:46:27,738 | INFO     | Training XGBoost on full history...
+2026-05-01 17:46:33,869 | INFO     | ✅ Saved 30 days of forecasts
+2026-05-01 17:46:33,870 | INFO     | 
+============================================================
+2026-05-01 17:46:33,871 | INFO     | ✅ PIPELINE COMPLETED SUCCESSFULLY
+2026-05-01 17:46:33,872 | INFO     | ⏱️  Total time: 140.2 seconds
+2026-05-01 17:46:33,872 | INFO     | ============================================================
+2026-05-01 17:53:11,153 | INFO     | 🚀 PIPELINE STARTED
+2026-05-01 17:53:11,155 | INFO     | Product: 1, Store: 1
+2026-05-01 17:53:11,156 | INFO     | Start time: 2026-05-01 17:53:11.153473
+2026-05-01 17:53:11,157 | INFO     | ============================================================
+2026-05-01 17:53:11,158 | INFO     | STEP 1: Verifying database connection
+2026-05-01 17:53:11,159 | INFO     | ============================================================
+2026-05-01 17:53:11,447 | INFO     | ✅ Database connection verified
+2026-05-01 17:53:11,448 | INFO     | 
+============================================================
+2026-05-01 17:53:11,449 | INFO     | STEP 2: Checking data availability
+2026-05-01 17:53:11,450 | INFO     | ============================================================
+2026-05-01 17:53:12,112 | INFO     | Database already has 3,000,888 sales transactions. Skipping load.
+2026-05-01 17:53:12,113 | INFO     | ✅ Data available
+2026-05-01 17:53:12,114 | INFO     | 
+============================================================
+2026-05-01 17:53:12,114 | INFO     | STEP 3: Training and evaluating models
+2026-05-01 17:53:12,115 | INFO     | ============================================================
+2026-05-01 17:53:14,327 | INFO     | Loaded 1684 days of data
+2026-05-01 17:53:14,328 | INFO     | 
+Training ARIMA...
+2026-05-01 17:55:09,631 | INFO     | ✅ ARIMA completed successfully
+2026-05-01 17:55:09,640 | INFO     | 
+Training Prophet...
+2026-05-01 17:55:10,348 | INFO     | Chain [1] start processing
+2026-05-01 17:55:10,577 | INFO     | Chain [1] done processing
+2026-05-01 17:55:10,804 | INFO     | Chain [1] start processing
+2026-05-01 17:55:10,900 | INFO     | Chain [1] done processing
+2026-05-01 17:55:11,086 | INFO     | Chain [1] start processing
+2026-05-01 17:55:11,150 | INFO     | Chain [1] done processing
+2026-05-01 17:55:11,379 | INFO     | Chain [1] start processing
+2026-05-01 17:55:11,496 | INFO     | Chain [1] done processing
+2026-05-01 17:55:11,778 | INFO     | Chain [1] start processing
+2026-05-01 17:55:11,878 | INFO     | Chain [1] done processing
+2026-05-01 17:55:12,070 | INFO     | Chain [1] start processing
+2026-05-01 17:55:12,186 | INFO     | Chain [1] done processing
+2026-05-01 17:55:12,400 | INFO     | Chain [1] start processing
+2026-05-01 17:55:12,513 | INFO     | Chain [1] done processing
+2026-05-01 17:55:12,734 | INFO     | Chain [1] start processing
+2026-05-01 17:55:12,924 | INFO     | Chain [1] done processing
+2026-05-01 17:55:13,150 | INFO     | Chain [1] start processing
+2026-05-01 17:55:13,296 | INFO     | Chain [1] done processing
+2026-05-01 17:55:13,575 | INFO     | Chain [1] start processing
+2026-05-01 17:55:13,706 | INFO     | Chain [1] done processing
+2026-05-01 17:55:13,970 | INFO     | Chain [1] start processing
+2026-05-01 17:55:14,085 | INFO     | Chain [1] done processing
+2026-05-01 17:55:14,167 | INFO     | ✅ Prophet completed successfully
+2026-05-01 17:55:14,168 | INFO     | 
+Training XGBoost...
+2026-05-01 17:56:37,151 | INFO     | ✅ XGBoost completed successfully
+2026-05-01 17:56:38,295 | INFO     | 
+🏆 Winner: XGBoost (MAPE: 23.15%)
+2026-05-01 17:56:38,390 | INFO     | ✅ Feature importance saved
+2026-05-01 17:56:38,407 | INFO     | 
+============================================================
+2026-05-01 17:56:38,408 | INFO     | STEP 4: Generating inventory recommendations
+2026-05-01 17:56:38,409 | INFO     | ============================================================
+2026-05-01 17:56:42,526 | INFO     | ✅ Inventory recommendations saved
+2026-05-01 17:56:42,527 | INFO     | 
+============================================================
+2026-05-01 17:56:42,530 | INFO     | STEP 5: Generating future forecasts
+2026-05-01 17:56:42,533 | INFO     | ============================================================
+2026-05-01 17:56:42,722 | INFO     | Training XGBoost on full history...
+2026-05-01 17:56:49,924 | INFO     | ✅ Saved 30 days of forecasts
+2026-05-01 17:56:49,926 | INFO     | 
+============================================================
+2026-05-01 17:56:49,927 | INFO     | ✅ PIPELINE COMPLETED SUCCESSFULLY
+2026-05-01 17:56:49,928 | INFO     | ⏱️  Total time: 218.8 seconds
+2026-05-01 17:56:49,928 | INFO     | ============================================================
+2026-05-01 18:56:51,077 | INFO     | 🚀 PIPELINE STARTED
+2026-05-01 18:56:51,081 | INFO     | Product: 1, Store: 1
+2026-05-01 18:56:51,083 | INFO     | Start time: 2026-05-01 18:56:51.077727
+2026-05-01 18:56:51,085 | INFO     | ============================================================
+2026-05-01 18:56:51,087 | INFO     | STEP 1: Verifying database connection
+2026-05-01 18:56:51,088 | INFO     | ============================================================
+2026-05-01 18:56:51,590 | INFO     | ✅ Database connection verified
+2026-05-01 18:56:51,590 | INFO     | 
+============================================================
+2026-05-01 18:56:51,591 | INFO     | STEP 2: Checking data availability
+2026-05-01 18:56:51,591 | INFO     | ============================================================
+2026-05-01 18:56:56,363 | INFO     | Database already has 3,000,888 sales transactions. Skipping load.
+2026-05-01 18:56:56,364 | INFO     | ✅ Data available
+2026-05-01 18:56:56,364 | INFO     | 
+============================================================
+2026-05-01 18:56:56,365 | INFO     | STEP 3: Training and evaluating models
+2026-05-01 18:56:56,365 | INFO     | ============================================================
+2026-05-01 18:57:00,450 | INFO     | Loaded 1684 days of data
+2026-05-01 18:57:00,451 | INFO     | 
+Training ARIMA...
+2026-05-01 18:58:03,540 | INFO     | 🚀 PIPELINE STARTED
+2026-05-01 18:58:03,740 | INFO     | Product: 1, Store: 1
+2026-05-01 18:58:03,740 | INFO     | Start time: 2026-05-01 18:58:03.540325
+2026-05-01 18:58:03,741 | INFO     | ============================================================
+2026-05-01 18:58:03,741 | INFO     | STEP 1: Verifying database connection
+2026-05-01 18:58:03,742 | INFO     | ============================================================
+2026-05-01 18:58:08,364 | INFO     | ✅ Database connection verified
+2026-05-01 18:58:08,366 | INFO     | 
+============================================================
+2026-05-01 18:58:08,367 | INFO     | STEP 2: Checking data availability
+2026-05-01 18:58:08,368 | INFO     | ============================================================
+2026-05-01 18:58:12,874 | INFO     | Database already has 3,000,888 sales transactions. Skipping load.
+2026-05-01 18:58:12,875 | INFO     | ✅ Data available
+2026-05-01 18:58:12,878 | INFO     | 
+============================================================
+2026-05-01 18:58:12,879 | INFO     | STEP 3: Training and evaluating models
+2026-05-01 18:58:12,879 | INFO     | ============================================================
+2026-05-01 18:58:26,812 | INFO     | Loaded 1684 days of data
+2026-05-01 18:58:26,813 | INFO     | 
+Training ARIMA...
+2026-05-01 19:01:46,829 | INFO     | ✅ ARIMA completed successfully
+2026-05-01 19:01:46,840 | INFO     | 
+Training Prophet...
+2026-05-01 19:01:47,956 | ERROR    | ❌ Prophet failed: Prophet failed to initialize. Install and configure a Stan backend (CmdStanPy recommended). Inside the container run: pip install cmdstanpy; python -c "import cmdstanpy; cmdstanpy.install_cmdstan()". If building CmdStan fails due to missing build tools, install system build tools (e.g., build-essential / make / gcc) first.
+2026-05-01 19:01:48,191 | ERROR    | Traceback (most recent call last):
+  File "/app/models/prophet_model.py", line 60, in _make_prophet
+    return Prophet(
+           ^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 155, in __init__
+    self._load_stan_backend(stan_backend)
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 166, in _load_stan_backend
+    self.stan_backend = StanBackendEnum.get_backend_class(stan_backend)()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prophet/models.py", line 94, in __init__
+    cmdstanpy.set_cmdstan_path(str(local_cmdstan))
+  File "/usr/local/lib/python3.11/site-packages/cmdstanpy/utils/cmdstan.py", line 164, in set_cmdstan_path
+    validate_cmdstan_path(path)
+  File "/usr/local/lib/python3.11/site-packages/cmdstanpy/utils/cmdstan.py", line 138, in validate_cmdstan_path
+    raise ValueError(
+ValueError: CmdStan installataion missing makefile, path /usr/local/lib/python3.11/site-packages/prophet/stan_model/cmdstan-2.33.1 is invalid. You may wish to re-install cmdstan by running command "install_cmdstan --overwrite", or Python code "import cmdstanpy; cmdstanpy.install_cmdstan(overwrite=True)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/models/prophet_model.py", line 72, in _make_prophet
+    return Prophet(
+           ^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 155, in __init__
+    self._load_stan_backend(stan_backend)
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 168, in _load_stan_backend
+    logger.debug("Loaded stan backend: %s", self.stan_backend.get_type())
+                                            ^^^^^^^^^^^^^^^^^
+AttributeError: 'Prophet' object has no attribute 'stan_backend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/pipeline.py", line 125, in step_3_train_and_evaluate
+    results = cv.evaluate_model(model, df)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/evaluation.py", line 105, in evaluate_model
+    model.fit(train_df, date_col=date_col, target_col=target_col)
+  File "/app/models/prophet_model.py", line 99, in fit
+    self.model = self._make_prophet(holiday_df)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/models/prophet_model.py", line 81, in _make_prophet
+    raise RuntimeError(
+RuntimeError: Prophet failed to initialize. Install and configure a Stan backend (CmdStanPy recommended). Inside the container run: pip install cmdstanpy; python -c "import cmdstanpy; cmdstanpy.install_cmdstan()". If building CmdStan fails due to missing build tools, install system build tools (e.g., build-essential / make / gcc) first.
+
+2026-05-01 19:01:48,192 | INFO     | 
+Training XGBoost...
+2026-05-01 19:03:42,465 | INFO     | ✅ ARIMA completed successfully
+2026-05-01 19:03:42,480 | INFO     | 
+Training Prophet...
+2026-05-01 19:03:43,151 | ERROR    | ❌ Prophet failed: Prophet failed to initialize. Install and configure a Stan backend (CmdStanPy recommended). Inside the container run: pip install cmdstanpy; python -c "import cmdstanpy; cmdstanpy.install_cmdstan()". If building CmdStan fails due to missing build tools, install system build tools (e.g., build-essential / make / gcc) first.
+2026-05-01 19:03:43,229 | ERROR    | Traceback (most recent call last):
+  File "/app/models/prophet_model.py", line 60, in _make_prophet
+    return Prophet(
+           ^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 155, in __init__
+    self._load_stan_backend(stan_backend)
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 166, in _load_stan_backend
+    self.stan_backend = StanBackendEnum.get_backend_class(stan_backend)()
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prophet/models.py", line 94, in __init__
+    cmdstanpy.set_cmdstan_path(str(local_cmdstan))
+  File "/usr/local/lib/python3.11/site-packages/cmdstanpy/utils/cmdstan.py", line 164, in set_cmdstan_path
+    validate_cmdstan_path(path)
+  File "/usr/local/lib/python3.11/site-packages/cmdstanpy/utils/cmdstan.py", line 138, in validate_cmdstan_path
+    raise ValueError(
+ValueError: CmdStan installataion missing makefile, path /usr/local/lib/python3.11/site-packages/prophet/stan_model/cmdstan-2.33.1 is invalid. You may wish to re-install cmdstan by running command "install_cmdstan --overwrite", or Python code "import cmdstanpy; cmdstanpy.install_cmdstan(overwrite=True)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/models/prophet_model.py", line 72, in _make_prophet
+    return Prophet(
+           ^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 155, in __init__
+    self._load_stan_backend(stan_backend)
+  File "/usr/local/lib/python3.11/site-packages/prophet/forecaster.py", line 168, in _load_stan_backend
+    logger.debug("Loaded stan backend: %s", self.stan_backend.get_type())
+                                            ^^^^^^^^^^^^^^^^^
+AttributeError: 'Prophet' object has no attribute 'stan_backend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/pipeline.py", line 125, in step_3_train_and_evaluate
+    results = cv.evaluate_model(model, df)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/evaluation.py", line 105, in evaluate_model
+    model.fit(train_df, date_col=date_col, target_col=target_col)
+  File "/app/models/prophet_model.py", line 99, in fit
+    self.model = self._make_prophet(holiday_df)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/models/prophet_model.py", line 81, in _make_prophet
+    raise RuntimeError(
+RuntimeError: Prophet failed to initialize. Install and configure a Stan backend (CmdStanPy recommended). Inside the container run: pip install cmdstanpy; python -c "import cmdstanpy; cmdstanpy.install_cmdstan()". If building CmdStan fails due to missing build tools, install system build tools (e.g., build-essential / make / gcc) first.
+
+2026-05-01 19:03:43,230 | INFO     | 
+Training XGBoost...
+2026-05-01 21:46:10,793 | INFO     | ✅ XGBoost completed successfully
+2026-05-01 21:46:13,034 | INFO     | 
+🏆 Winner: XGBoost (MAPE: 23.15%)
+2026-05-01 21:46:13,120 | INFO     | ✅ Feature importance saved
+2026-05-01 21:46:13,237 | INFO     | 
+============================================================
+2026-05-01 21:46:13,242 | INFO     | STEP 4: Generating inventory recommendations
+2026-05-01 21:46:13,243 | INFO     | ============================================================
+2026-05-01 21:46:31,043 | INFO     | ✅ XGBoost completed successfully
+2026-05-01 21:46:32,509 | INFO     | 
+🏆 Winner: XGBoost (MAPE: 23.15%)
+2026-05-01 21:46:32,577 | INFO     | ✅ Feature importance saved
+2026-05-01 21:46:32,697 | INFO     | 
+============================================================
+2026-05-01 21:46:32,702 | INFO     | STEP 4: Generating inventory recommendations
+2026-05-01 21:46:32,704 | INFO     | ============================================================
+2026-05-01 21:46:40,852 | INFO     | ✅ Inventory recommendations saved
+2026-05-01 21:46:40,850 | INFO     | ✅ Inventory recommendations saved
+2026-05-01 21:46:40,854 | INFO     | 
+============================================================
+2026-05-01 21:46:40,855 | INFO     | STEP 5: Generating future forecasts
+2026-05-01 21:46:40,855 | INFO     | 
+============================================================
+2026-05-01 21:46:40,857 | INFO     | ============================================================
+2026-05-01 21:46:40,857 | INFO     | STEP 5: Generating future forecasts
+2026-05-01 21:46:40,858 | INFO     | ============================================================
+2026-05-01 21:46:41,185 | INFO     | Training XGBoost on full history...
+2026-05-01 21:46:41,186 | INFO     | Training XGBoost on full history...
+2026-05-01 22:00:42,182 | INFO     | ✅ Saved 30 days of forecasts
+2026-05-01 22:00:42,215 | INFO     | 
+============================================================
+2026-05-01 22:00:42,216 | INFO     | ✅ PIPELINE COMPLETED SUCCESSFULLY
+2026-05-01 22:00:42,216 | INFO     | ⏱️  Total time: 11031.1 seconds
+2026-05-01 22:00:42,217 | INFO     | ============================================================
+2026-05-01 22:00:42,496 | INFO     | ✅ Saved 30 days of forecasts
+2026-05-01 22:00:42,543 | INFO     | 
+============================================================
+2026-05-01 22:00:42,544 | INFO     | ✅ PIPELINE COMPLETED SUCCESSFULLY
+2026-05-01 22:00:42,546 | INFO     | ⏱️  Total time: 10959.0 seconds
+2026-05-01 22:00:42,548 | INFO     | ============================================================

@@ -1,0 +1,59 @@
+# docker-compose.yml
+# Defines containers for database, Python environment, pipeline runner, and dashboard
+
+version: '3.8'
+
+services:
+  # SERVICE 1: Database
+  db:
+    image: postgres:15
+    container_name: supply_chain_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: supply_chain
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # SERVICE 2: Python Environment (interactive dev + Jupyter)
+  python:
+    build: .
+    container_name: supply_chain_python
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    ports:
+      - "8888:8888"
+      - "8889:8889"
+
+  # SERVICE 3: Pipeline Runner (executes pipeline.py once and exits)
+  pipeline:
+    build: .
+    container_name: supply_chain_pipeline
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python pipeline.py
+
+  # SERVICE 4: Streamlit Dashboard (interactive web app)
+  dashboard:
+    build: .
+    container_name: supply_chain_dashboard
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "8501:8501"   # Streamlit default port
+    command: streamlit run dashboard.py --server.address=0.0.0.0 --server.port=8501
+
+volumes:
+  postgres_data:

@@ -1,0 +1,19 @@
+# requirements.txt
+# This is a shopping list of Python libraries we need
+
+pandas==2.1.4        # For working with tables of data (like Excel but in Python)
+numpy==1.26.2        # For math operations on arrays
+sqlalchemy==2.0.23   # For Python to talk to SQL databases
+psycopg2-binary==2.9.9  # PostgreSQL adapter (the "translator" between Python and PostgreSQL)
+python-dotenv==1.0.0  # For loading secret settings from a .env file
+jupyter==1.0.0       # For interactive notebooks (useful for exploring data)pmdarima==2.0.4
+scikit-learn==1.3.2
+matplotlib==3.8.2
+prophet==1.1.5       # Facebook's forecasting tool
+holidays==0.41       # Holiday calendars for different countries
+pmdarima==2.0.4   # ARIMA modeling
+xgboost==2.0.3       # The gradient boosting library
+optuna==3.5.0        # For hyperparameter tuning (finding best settings)
+pmdarima==2.0.4       # ARIMA modeling library
+streamlit==1.29.0    # Web app framework for data science
+plotly==5.17.0       # Interactive charts
